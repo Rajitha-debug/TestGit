@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-11T17:48:16.119Z",
+    "end": "2024-06-11T17:48:27.825Z",
+    "duration": 11706,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2d3a7549-0624-484e-9561-0cc21796d9bb",
+      "title": "",
+      "fullFile": "cypress\\Integrations\\Examples\\Tables.js",
+      "file": "cypress\\Integrations\\Examples\\Tables.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6a92a279-6e05-4965-b659-50e948369fa0",
+          "title": "Handling Tables",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Tables",
+              "fullTitle": "Handling Tables Tables",
+              "timedOut": null,
+              "duration": 7787,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://rahulshettyacademy.com/AutomationPractice/');\ncy.get('tr td:nth-child(2)').each(($el, Index, $list) => {\n  const course = $el.text();\n  if (course === 'Learn JMETER from Scratch - (Performance + Load) Testing Tool') {\n    cy.get('tr td:nth-child(2)').eq(Index).next().then(function (price) {\n      const cost = price.text();\n      //expect(cost).to .equal('25')\n      cy.get('tr td:nth-child(2)').eq(Index).next().should('contain', cost);\n    });\n  }\n});",
+              "err": {},
+              "uuid": "e8edb2e0-257c-437a-877f-5c196939c206",
+              "parentUUID": "6a92a279-6e05-4965-b659-50e948369fa0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e8edb2e0-257c-437a-877f-5c196939c206"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7787,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

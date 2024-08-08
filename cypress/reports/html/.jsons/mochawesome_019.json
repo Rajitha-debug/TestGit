@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-11T17:47:03.125Z",
+    "end": "2024-06-11T17:47:14.743Z",
+    "duration": 11618,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2d11fb6b-60be-44b6-b319-2f3816044206",
+      "title": "",
+      "fullFile": "cypress\\Integrations\\Examples\\Frames.js",
+      "file": "cypress\\Integrations\\Examples\\Frames.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cb36d1bd-03d4-47f9-8816-5953671e7ff5",
+          "title": "Frames",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "frames",
+              "fullTitle": "Frames frames",
+              "timedOut": null,
+              "duration": 8236,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://rahulshettyacademy.com/AutomationPractice/');\ncy.frameLoaded('#courses-iframe');\ncy.iframe().contains('Mentorship').click();",
+              "err": {},
+              "uuid": "3620d24b-14d9-4e1e-8a04-49c41f4d7ce2",
+              "parentUUID": "cb36d1bd-03d4-47f9-8816-5953671e7ff5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3620d24b-14d9-4e1e-8a04-49c41f4d7ce2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8236,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

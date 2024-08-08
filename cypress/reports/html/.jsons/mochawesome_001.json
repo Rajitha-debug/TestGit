@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-11T16:57:44.247Z",
+    "end": "2024-06-11T16:57:57.090Z",
+    "duration": 12843,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a116ddb0-b7d9-4c01-acea-46c3ea0fc6e3",
+      "title": "",
+      "fullFile": "cypress\\Integrations\\Examples\\Bascis.js",
+      "file": "cypress\\Integrations\\Examples\\Bascis.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9fff87c0-ebc8-42a0-a050-71ed2b7ca0ca",
+          "title": "First testCase",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "First Test",
+              "fullTitle": "First testCase First Test",
+              "timedOut": null,
+              "duration": 8463,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('url') + \"seleniumPractise/#/\");\ncy.get('.search-keyword').type(\"ca\");\n//cy.get(\"[placeholder='Search for Vegetables and Fruits']\").should('have.length','4');\ncy.wait(2000);\ncy.get('.search-keyword').should('have.length', '1');\n// cy.get('.product').should('have.length','4');\n//cy.get('.product:visible').should('have.length','4');\ncy.get('.products').find('.product').eq(1).contains('ADD TO CART').click();\n//To do above step without index\ncy.get('.products').find('.product').each(($el, index, $list) => {\n  const veggname = $el.find('.product-name').text();\n  if (veggname.includes(\"Capsicum\")) {\n    // $el.find('button').click() --click function on find is deprecated if need to us ewe need wrap element in wrap method as below\n    cy.wrap($el).find('button').click();\n  }\n});",
+              "err": {},
+              "uuid": "80cd5c2d-d7eb-4f36-bd1e-02dc78b12229",
+              "parentUUID": "9fff87c0-ebc8-42a0-a050-71ed2b7ca0ca",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "80cd5c2d-d7eb-4f36-bd1e-02dc78b12229"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8463,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

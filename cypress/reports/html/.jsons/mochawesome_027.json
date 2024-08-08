@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-07-22T16:13:20.981Z",
+    "end": "2024-07-22T16:13:30.630Z",
+    "duration": 9649,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "65f30031-5491-46b1-b5e1-a1fef71d398e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Examples\\Alerts.js",
+      "file": "cypress\\e2e\\Examples\\Alerts.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "93d26e31-a5b6-40d2-9473-a1c87f45206b",
+          "title": "Alerts Handeling",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "alert handeling",
+              "fullTitle": "Alerts Handeling alert handeling",
+              "timedOut": null,
+              "duration": 6372,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://rahulshettyacademy.com/AutomationPractice/\");\ncy.get('#name').type('Rajitha');\ncy.get('#alertbtn').click();\ncy.get('#confirmbtn').click();\n// To Catcher Text from the pop up and validate we need to do following\ncy.on('window:alert', str => {\n  // cy.log(str.text())\n  expect(str).to.equal('Hello Rajitha, share this practice page and share your knowledge');\n});\ncy.on('window:confirm', str => {\n  expect(str).to.equal('Hello , Are you sure you want to confirm?');\n});",
+              "err": {},
+              "uuid": "94458d2a-7df5-4020-b3d5-ad30173ce4ba",
+              "parentUUID": "93d26e31-a5b6-40d2-9473-a1c87f45206b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "94458d2a-7df5-4020-b3d5-ad30173ce4ba"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6372,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

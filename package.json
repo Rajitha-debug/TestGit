@@ -1,0 +1,32 @@
+{
+  "name": "rajitha",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "Chrome": "npx cypress run --browser Chrome",
+    "Headed": "npx cypress run --Headed",
+    "reports": "npx cypress run --record --key db0f17e3-f242-4acf-bf38-30be737be1b3 "
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.6",
+    "cypress": "^13.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.1",
+    "@cypress/webpack-preprocessor": "^6.0.2",
+    "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
+    "babel-loader": "^9.1.3",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "exceljs": "^4.4.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "webpack": "^5.92.0"
+  }
+}

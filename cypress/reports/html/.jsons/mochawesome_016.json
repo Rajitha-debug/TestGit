@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-11T17:46:03.599Z",
+    "end": "2024-06-11T17:46:17.653Z",
+    "duration": 14054,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5f7a3a0d-0bd6-4776-8785-58054e8b05a6",
+      "title": "",
+      "fullFile": "cypress\\Integrations\\Examples\\Check.js",
+      "file": "cypress\\Integrations\\Examples\\Check.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f3291abc-5767-4fc1-9011-a1548c538971",
+          "title": "check box",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check box",
+              "fullTitle": "check box Check box",
+              "timedOut": null,
+              "duration": 9118,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://rahulshettyacademy.com/AutomationPractice/\");\ncy.get('#checkBoxOption1').check().should('be.checked').and('have.value', 'option1');\ncy.get('#checkBoxOption1').uncheck().should('not.be.checked');\ncy.get('#checkbox-example').find('input[type=\"checkbox\"]').check();\ncy.get('#checkbox-example').find('input[type=\"checkbox\"]').uncheck();\ncy.get('#checkbox-example').find('input[type=\"checkbox\"]').check(['option1', 'option3']);\ncy.get('#checkbox-example').find('input[type=\"checkbox\"]').uncheck(['option1']);\n//cy.get('#checkbox-example').find('input[type=\"checkbox\"]')",
+              "err": {},
+              "uuid": "eb41b887-8fff-426d-8457-3ec9063dce47",
+              "parentUUID": "f3291abc-5767-4fc1-9011-a1548c538971",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "eb41b887-8fff-426d-8457-3ec9063dce47"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9118,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
